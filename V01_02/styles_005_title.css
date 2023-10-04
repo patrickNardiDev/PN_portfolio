@@ -1,0 +1,107 @@
+/* Annime_Name________________________________________________ */
+/* .grid_row_icons div, */
+nav .nameheadrer--careerpath .title_annime--careerpath span,
+.namemain--careerpath .title_annime--careerpath span,
+section .title--home span,
+nav .nameheadrer--careerpath .title_annime--careerpath h1 {
+    transform: translateX(-100%);
+    animation: byBottom 1s ease both;
+
+}
+
+nav .nameheadrer--careerpath .title_annime--careerpath span:last-child,
+.namemain--careerpath .title_annime--careerpath span:last-child,
+section .title--home span:last-child {
+    animation: byBottom 1s 0.25s ease both;
+}
+
+nav .nameheadrer--careerpath .title_annime--careerpath span a::after,
+.namemain--careerpath .title_annime--careerpath span a::after,
+section .title--home span a::after {
+    content: "";
+    height: 2px;
+    background-color: var(--orange);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    animation: linkAfter 0.5s 1s ease both;
+}
+
+
+
+nav .nameheadrer--careerpath .title_annime--careerpath,
+.namemain--careerpath .title_annime--careerpath {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+section .title--home {
+    overflow: hidden;
+    padding-bottom: 10px;
+    font-family: syncopate;
+}
+
+.namemain--careerpath>div>span,
+.nameheadrer--careerpath>div>span,
+section .title--home>span {
+    display: block;
+    color: var(--white);
+    margin: 0;
+}
+
+.namemain--careerpath>div>span:nth-child(1)>h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 1em;
+}
+
+.namemain--careerpath>div>span>div>a,
+.nameheadrer--careerpath>div>span>div>a,
+.namemain--careerpath>div>span>a,
+.nameheadrer--careerpath>div>span>a,
+section .title--home span a {
+    color: var(--orange);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.nameheadrer--careerpath,
+.namemain--careerpath,
+.title--home {
+    letter-spacing: 0.25vw;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+
+section .title--home>span {
+    width: 100%;
+}
+
+
+.myname--careerpath {
+    overflow: hidden;
+    visibility: hidden;
+    display: none;
+
+}
+
+/* .myname--nav--hiden */
+.myname--nav--hiden {
+    overflow: hidden;
+    visibility: hidden;
+    display: none;
+    z-index: 0;
+}
+
+
+hgroup span .rqth {
+    color: var(--green);
+    display: inline;
+}
+
+.junior {
+    display: inline;
+}

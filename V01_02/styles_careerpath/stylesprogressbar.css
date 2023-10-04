@@ -1,0 +1,27 @@
+#progressbar {
+    background: var(--orange);
+    background-size: 100% 100%;
+    animation: scroll 4s ease infinite;
+    position: static;
+    background-size: 600% 600%;
+
+
+    height: 3px;
+    width: 0%;
+    z-index: 10;
+    width: 0;
+}
+
+@keyframes scroll {
+    0% {
+        background-position: 0% 57%
+    }
+
+    50% {
+        background-position: 100% 44%
+    }
+
+    100% {
+        background-position: 0% 57%
+    }
+}

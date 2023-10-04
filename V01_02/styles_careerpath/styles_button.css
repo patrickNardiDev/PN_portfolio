@@ -1,0 +1,107 @@
+button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+}
+
+button.learn-more {
+    /* ici */
+    width: calc(10em + 12vw);
+    min-width: 21rem;
+    max-width: 26rem;
+    /* width: 21rem; */
+    height: 100%;
+    padding-bottom: 50px;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 1.5em;
+    height: 1.5em;
+    background: var(--footer);
+    border-radius: 1.625em;
+    border: var(--header);
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--footer);
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: -.1em;
+    width: 1.125em;
+    height: 0.125em;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25em;
+    right: 0.0625em;
+    width: 0.625em;
+    height: 0.625em;
+    border-top: 0.125rem solid var(--orange);
+    border-right: 0.125rem solid var(--orange);
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: -1em;
+    right: 0;
+    bottom: 0;
+    padding: 0.3em 0em;
+    margin: 0 0 0 0;
+    color: var(--footer);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    font-size: .8em;
+    font-family: syncopate;
+    font-weight: 300;
+}
+
+button.learn-more .button-text .screen--small,
+button.learn-more .button-text .screen--big {
+    color: var(--orange);
+}
+
+/* HOVER__________________________________________ */
+
+button:hover .circle {
+    width: 100%;
+    background: var(--header);
+    border: var(--orange);
+    border-style: solid;
+    border-width: 2px;
+}
+
+button:hover .circle .icon.arrow {
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text,
+button:hover .button-text .screen--small,
+button:hover .button-text .screen--big {
+    color: var(--blue);
+}

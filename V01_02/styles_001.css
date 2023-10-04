@@ -1,0 +1,356 @@
+/* @font-face {
+    font-family: syncopate;
+    src: url(font/syncopate/Syncopate-Regular.ttf);
+    font-display: optional;
+} */
+
+:root {
+    /* --SpeedTransition: 1.8s; */
+    --blue: #4DC3FA;
+    --header: #364150;
+    --footer: #232F3F;
+    --roboto: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --white: #efefefc2;
+    --orange: #f77118;
+    --green: #00C95A;
+
+    /* --margintop: 100px; */
+    --marginTop4nav: 120px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    box-sizing: border-box;
+    color: var(--white);
+    background: var(--header);
+    width: 100vw;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--footer);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--orange);
+    border-radius: 5px;
+}
+
+
+body {
+    font-family: var(--roboto);
+    background: var(--header);
+}
+
+
+::selection {
+    background-color: var(--green);
+    color: #1b1b1b;
+}
+
+.mainFooterZone {
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+}
+
+.main--home {
+    height: 100vh;
+}
+
+p {
+    text-align: left;
+}
+
+blockquote {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+blockquote .textother {
+    font-family: syncopate;
+    text-align: center;
+    color: var(--blue);
+    font-size: calc(0.45em + .5vw);
+}
+
+.flexzone--careerpath {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100%; */
+}
+
+.main--home {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.main--careerpath {
+    flex-direction: column;
+}
+
+.nomyPaddingBotton {
+    padding-bottom: 0;
+
+}
+
+.margintop--careerpath {
+    margin-top: var(--marginTop4nav);
+}
+
+.nameheadrer--careerpath {
+    margin-top: 15px;
+    margin-left: calc(7vw - 1em);
+    font-family: syncopate;
+}
+
+.navgroupe {
+    width: 90%;
+}
+
+article {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.article--home {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100%;
+    /* padding: 0 calc(10vw - 2em); */
+}
+
+.article--careerpath {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hgroup_main--home {
+    padding-left: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/* _________________________________________ */
+
+.text_flex_collumn--home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+
+}
+
+.flex_align-self--start {
+    align-self: flex-start;
+    /* width: 51%; */
+}
+
+.flex_align-self--end {
+    align-self: flex-end;
+    /* width: 51%; */
+}
+
+.namemain--careerpath {
+    font-family: syncopate;
+    transform: translateX(-2rem) translateY(1rem);
+}
+
+.bubble--home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blue);
+    width: 100%;
+    font-family: var(--roboto);
+    animation: opacityUp 3s 0.5s ease both;
+    padding-left: calc(14vw - 2em);
+
+
+}
+
+.stage--home {
+    color: #fc8b41;
+    animation: opacityUp 3s 0.5s ease both;
+    /* padding-right: calc(10vw - 2em); */
+    padding-left: 0;
+
+}
+
+.stage--home p.text--presentation {
+    margin-right: calc(14vw - 2em);
+}
+
+section .title--home span .subtitle {
+    min-width: 100%;
+    display: inline-block;
+}
+
+section .title--home span .rqth {
+    color: #00C95A;
+}
+
+section .title--home span .rqth,
+section .title--home span .junior,
+section .title--home span .subtitle2 {
+    display: inline-block;
+}
+
+/* IMG---------------------------------------------------------------- */
+.flex_icons--home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding-left: 15px;
+    width: 85vw;
+    overflow: hidden;
+
+    transform: translateX(-100%);
+    animation: byBottom 1s ease both;
+}
+
+.box_img--home {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.icon_work--home {
+    max-height: 80px;
+    min-height: 30px;
+    vertical-align: middle;
+    justify-content: center;
+    height: calc(35px + .5vw);
+    width: auto;
+    margin-right: .5em;
+    margin-top: .5em;
+
+    animation: byBottom 1s 0.25s ease both;
+}
+
+/* INTRO________________________________________________________ */
+
+.moreinfos_zonehidden--careerpath {
+    visibility: hidden;
+    display: none;
+}
+
+.moreinfos_zonevisible--careerpath {
+    visibility: visible;
+    display: block;
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.dim00 {
+    width: 0;
+    height: 0;
+}
+
+.dimall {
+    width: auto;
+    height: auto;
+}
+
+
+.italic {
+    font-style: italic;
+}
+
+/* font size adaptative_______________________________________________ */
+h1,
+p,
+a,
+div,
+.junior,
+.subtitle2,
+.rqth,
+.text--rStage,
+.text--presentation {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 100%
+}
+
+p {
+    font-size: calc(0.65em + .5vw);
+}
+
+
+section .title--home .myname--home h1 {
+    font-size: calc(36px + 5vw);
+    line-height: calc(calc(40px + 5vw)*0.87);
+}
+
+section .title--home .subtitle a {
+    font-size: calc(24px + 1vw);
+}
+
+section .title--home .subtitle2,
+section .title--home .junior {
+    font-size: calc(16px + .8vw);
+}
+
+section .title--home .rqth {
+    font-size: calc(10px + .8vw);
+}
+
+.bubble--home .text--rStage,
+.bubble--home .text--presentation {
+    font-size: calc(18px + 0.4vw);
+    font-weight: 300;
+}
+
+.bubble--home .text--presentation {
+    text-align: right;
+}
+
+.link_symbol {
+    font-size: calc(10px + 0.4vw);
+}
+
+.link--effect:hover {
+    color: var(--green);
+}

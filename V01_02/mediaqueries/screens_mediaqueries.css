@@ -1,0 +1,279 @@
+@media (max-width: 767px) {
+
+    /* nav _____________________________________________________ */
+    nav {
+        background-color: transparent;
+    }
+
+    .myname--careerpath {
+        visibility: visible;
+        display: block;
+    }
+
+    .nav--home {
+        visibility: hidden;
+        display: none;
+    }
+
+    /* .nav--careerpath {
+        visibility: visible;
+        display: block;
+    } */
+
+    .long_menu--home {
+        visibility: hidden;
+        display: none;
+    }
+
+    .long_menu--careerpath {
+        visibility: hidden;
+        display: none;
+    }
+
+    /* Hamberger */
+    .hamburger_menu {
+        visibility: visible;
+        display: flex;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    /* page careerpath ______________________________________________________*/
+    aside {
+        visibility: hidden;
+        display: none;
+    }
+
+    .gridzone--careerpath {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+
+    .groupexp--careerpath {
+        width: 90vw;
+    }
+
+    .nameheadrer--careerpath {
+        visibility: visible;
+        display: block;
+    }
+
+    .namemain--careerpath {
+        visibility: hidden;
+        display: none;
+    }
+
+    .shortdev {
+        visibility: visible;
+        display: inline;
+
+    }
+
+    .longdev {
+        visibility: hidden;
+        display: none;
+
+    }
+
+    button {
+
+        width: 75%;
+    }
+
+    /* button _____________________________________________________ */
+    .screen--small {
+        visibility: visible;
+        display: inline;
+    }
+
+    .screen--big {
+        visibility: hidden;
+        display: none;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    /* nav _____________________________________________________ */
+    nav {
+        background-color: transparent;
+    }
+
+    .myname--careerpath {
+        visibility: visible;
+        display: block;
+    }
+
+    .nav--home {
+        visibility: hidden;
+        display: none;
+    }
+
+    /* 
+    .nav--careerpath {
+        visibility: visible;
+        display: block;
+    } */
+
+    .long_menu--home {
+        visibility: hidden;
+        display: none;
+    }
+
+    .long_menu--careerpath {
+        visibility: hidden;
+        display: none;
+    }
+
+    /* Hamberger */
+    .hamburger_menu {
+        visibility: visible;
+        display: flex;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    /* page home__________________________________________ */
+    .margintop--home {
+        margin-top: 0;
+    }
+
+    /* page careerpath ______________________________________________________*/
+    aside {
+        visibility: visible;
+        display: block;
+    }
+
+    .nameheadrer--careerpath {
+        visibility: visible;
+        display: block;
+    }
+
+    .namemain--careerpath {
+        visibility: hidden;
+        display: none;
+    }
+
+
+    .longdev {
+        visibility: visible;
+        display: inline;
+
+    }
+
+    .shortdev {
+        visibility: hidden;
+        display: none;
+
+    }
+
+    /* button _____________________________________________________ */
+    .screen--small {
+        visibility: hidden;
+        display: none;
+    }
+
+    .screen--big {
+        visibility: visible;
+        display: inline;
+    }
+}
+
+@media (min-width: 1080px) {
+
+    /* nav _____________________________________________________ */
+    nav {
+        background-color: var(--header);
+    }
+
+    nav .zone-title-nemu {
+        /* menu déployé hamberger */
+        z-index: 0;
+        visibility: visible;
+        display: block;
+    }
+
+    .myname--careerpath {
+        visibility: hidden;
+        display: none;
+    }
+
+    .nav--home {
+        visibility: visible;
+        display: block;
+    }
+
+    /* .nav--careerpath {
+        visibility: visible;
+        display: block;
+    } */
+
+    .long_menu--home {
+        visibility: visible;
+        display: flex;
+    }
+
+    .long_menu--careerpath {
+
+        visibility: visible;
+        display: flex;
+    }
+
+    /* Hamberger */
+    .hamburger_menu {
+        visibility: hidden;
+        display: none;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+
+    /* page home__________________________________________ */
+    .margintop--home {
+        margin-top: var(--marginTop4nav);
+    }
+
+    /* page careerpath ______________________________________________________*/
+    aside {
+        visibility: visible;
+        display: block;
+    }
+
+    .namemain--careerpath {
+        visibility: visible;
+        display: block;
+    }
+
+    .nameheadrer--careerpath {
+        visibility: hidden;
+        display: none;
+    }
+
+    .shortdev {
+        visibility: hidden;
+        display: none;
+
+    }
+
+    .longdev {
+        visibility: hidden;
+        display: none;
+
+    }
+
+    /* FOOTER ______________________________________________________*/
+    .grid_footer_row_icons {
+        visibility: hidden;
+    }
+
+}

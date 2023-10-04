@@ -1,0 +1,70 @@
+/* media queries breakpoints of page home */
+
+@media (min-height: 280px) {
+    .bubble--home.rStage {
+        display: none;
+        visibility: hidden;
+    }
+
+
+    .bubble--home.stage--home {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (min-height: 640px) {
+    .bubble--home.rStage {
+        display: flex;
+        visibility: visible;
+        width: 81%;
+
+    }
+
+
+    .bubble--home.stage--home {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+@media (min-height: 768px) {
+    .bubble--home.rStage {
+        display: flex;
+        visibility: visible;
+        /* width: 51%; */
+    }
+
+    .bubble--home.stage--home {
+        display: flex;
+        visibility: visible;
+    }
+}
+
+/* ___________________________________________________________ */
+
+@media only screen and (min-width: 300px) {
+
+    .flex_align-self--start {
+        /* align-self: flex-start; */
+        width: 81%;
+    }
+
+    .flex_align-self--end {
+        /* align-self: flex-end; */
+        width: 81%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .flex_align-self--start {
+        /* align-self: flex-start; */
+        width: 51%;
+    }
+
+    .flex_align-self--end {
+        /* align-self: flex-end; */
+        width: 51%;
+    }
+}
